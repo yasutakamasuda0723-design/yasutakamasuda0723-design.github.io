@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>増田康隆・中島遥 結婚式のご案内</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:
+    "Hiragino Mincho ProN",
+    "Yu Mincho",
+    serif;
+    color:#333;
+    line-height:1.8;
+    background:#faf9f7;
+}
+
+header{
+    text-align:center;
+}
+
+.hero-image{
+    width:100%;
+    height:70vh;
+    object-fit:cover;
+}
+
+.hero-text{
+    padding:60px 20px;
+}
+
+.hero-text h1{
+    font-size:3rem;
+    font-weight:normal;
+}
+
+.hero-text h2{
+    margin-top:10px;
+    font-weight:normal;
+}
+
+nav{
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:100;
+    border-bottom:1px solid #ddd;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav li{
+    margin:15px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#444;
+}
+
+section{
+    max-width:900px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+h3{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2rem;
+    font-weight:normal;
+}
+
+.invitation{
+    text-align:center;
+    white-space:pre-line;
+}
+
+.countdown{
+    text-align:center;
+    font-size:2rem;
+    margin-top:30px;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.profile{
+    text-align:center;
+}
+
+.profile img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.schedule-item{
+    margin-bottom:30px;
+}
+
+.time{
+    font-size:1.4rem;
+    font-weight:bold;
+}
+
+.venue{
+    text-align:center;
+}
+
+iframe{
+    width:100%;
+    height:400px;
+    border:none;
+    margin-top:30px;
+}
+
+.rsvp{
+    text-align:center;
+}
+
+.rsvp a{
+    display:inline-block;
+    padding:15px 40px;
+    background:#8f7763;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+}
+
+footer{
+    text-align:center;
+    padding:60px 20px;
+    background:#f1ede8;
+}
+
+@media(max-width:768px){
+
+.hero-text h1{
+    font-size:2rem;
+}
+
+.about-grid{
+    grid-template-columns:1fr;
+}
+
+.profile img{
+    width:180px;
+    height:180px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="images/couple.jpg" class="hero-image">
+
+<div class="hero-text">
+
+<h1>増田 康隆<br>＆<br>中島 遥</h1>
+
+<h2>2026年8月23日</h2>
+
+<p>東京會舘</p>
+
+<div id="countdown" class="countdown"></div>
+
+</div>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="#about">おふたりについて</a></li>
+<li><a href="#schedule">当日の流れ</a></li>
+<li><a href="#venue">会場</a></li>
+<li><a href="#note">ご案内</a></li>
+<li><a href="#rsvp">出欠確認</a></li>
+</ul>
+</nav>
+
+<section>
+
+<div class="invitation">
+
+謹啓
+
+盛夏の候
+皆様にはますますご清祥のこととお慶び申し上げます
+
+さて 私たちはこのたび結婚式を挙げることとなりました
+
+日頃よりお世話になっております皆様へ
+感謝の気持ちをお伝えしたく
+ささやかながら披露宴を催します
+
+ご多用中とは存じますが
+ぜひご臨席賜りますようご案内申し上げます
+
+敬具
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h3>おふたりについて</h3>
+
+<div class="about-grid">
+
+<div class="profile">
+<img src="images/yasutaka.jpg">
+<h4>増田 康隆</h4>
+<p>新郎</p>
+</div>
+
+<div class="profile">
+<img src="images/haruka.jpg">
+<h4>中島 遥</h4>
+<p>新婦</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="schedule">
+
+<h3>当日の流れ</h3>
+
+<div class="schedule-item">
+<div class="time">12:30</div>
+受付開始
+</div>
+
+<div class="schedule-item">
+<div class="time">13:00</div>
+披露宴
+</div>
+
+<div class="schedule-item">
+<div class="time">15:30</div>
+お開き
+</div>
+
+</section>
+
+<section id="venue">
+
+<h3>会場</h3>
+
+<div class="venue">
+
+<p><strong>東京會舘</strong></p>
+
+<p>
+〒100-0005<br>
+東京都千代田区丸の内3-2-1
+</p>
+
+<iframe
+src="https://maps.google.com/maps?q=東京會舘&t=&z=15&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+
+</section>
+
+<section id="note">
+
+<h3>ご案内</h3>
+
+<p>
+当日は公共交通機関をご利用ください。<br>
+JR有楽町駅より徒歩すぐです。
+</p>
+
+</section>
+
+<section id="rsvp">
+
+<h3>出欠確認</h3>
+
+<div class="rsvp">
+
+<p>
+ご出欠につきましては<br>
+下記フォームよりご回答いただけますと幸いです。
+</p>
+
+<br>
+
+<a href="https://forms.gle/6HGH1BraR9HGR4Nr7">
+出欠を回答する
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+増田康隆・中島遥
+
+<br>
+
+2026年8月23日
+
+</footer>
+
+<script>
+
+const weddingDate =
+new Date("2026-08-23T13:00:00");
+
+function updateCountdown(){
+
+const now = new Date();
+
+const diff = weddingDate - now;
+
+const days =
+Math.floor(diff/(1000*60*60*24));
+
+const hours =
+Math.floor((diff/(1000*60*60))%24);
+
+const minutes =
+Math.floor((diff/(1000*60))%60);
+
+const seconds =
+Math.floor((diff/1000)%60);
+
+document.getElementById("countdown").innerHTML =
+days + "日 "
++ hours + "時間 "
++ minutes + "分 "
++ seconds + "秒";
+
+}
+
+setInterval(updateCountdown,1000);
+
+updateCountdown();
+
+</script>
+
+</body>
+</html>
