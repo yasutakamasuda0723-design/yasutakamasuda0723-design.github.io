@@ -176,6 +176,17 @@ footer{
 </head>
 
 <body>
+<script>
+const password = "260823yhm";  // 好きなパスワードに変更
+
+const input = prompt("招待状をご覧いただくためのパスワードをご入力ください");
+
+if(input !== password){
+    document.write("<h1 style='text-align:center;margin-top:100px;'>パスワードが正しくありません</h1>");
+    throw new Error("Unauthorized");
+}
+</script>
+
 
 <header>
 
