@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>増田康隆・中島遥 結婚式のご案内</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:
+"Hiragino Mincho ProN",
+"Yu Mincho",
+serif;
+
+background:#ffffff;
+
+color:#333;
+
+line-height:2;
+}
+
+header{
+
+position:relative;
+
+height:100vh;
+
+overflow:hidden;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+}
+/* 背景写真 */
+.hero-image{
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+object-fit:contain;
+
+/* ←ぼかし完全OFF */
+filter:
+brightness(97%)
+contrast(108%)
+saturate(105%);
+
+transform:none;
+
+z-index:1;
+
+}
+
+/* 写真上の文字ブロック */
+.hero-text{
+
+position:absolute;
+
+top:70%;
+
+left:50%;
+
+transform:
+translate(-50%,-50%);
+
+z-index:2;
+
+padding:24px 48px;
+
+background:
+rgba(255,255,255,0);
+
+backdrop-filter:none;
+
+border-radius:18px;
+
+width:90%;
+
+max-width:900px;
+
+text-align:center;
+
+/* ←全部白 */
+color:white;
+
+}
+
+/* タイトル */
+.hero-text h1{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-wrap:nowrap;
+
+gap:0.18em;
+
+font-family:
+"Cormorant Garamond",
+"Times New Roman",
+"Yu Mincho",
+serif;
+
+font-size:
+clamp(2.6rem,5vw,4.2rem);
+
+font-weight:400;
+
+letter-spacing:0.05em;
+
+line-height:1;
+
+white-space:nowrap;
+
+color:white;
+
+-webkit-text-stroke:
+0.7px rgba(255,255,255,.95);
+
+text-shadow:
+0 1px 10px rgba(0,0,0,.28);
+
+}
+
+/* & */
+.hero-text .ampersand{
+
+font-size:0.60em;
+
+font-weight:300;
+
+opacity:0.95;
+
+position:relative;
+
+/* 少し下げる */
+top:0.10em;
+
+margin:
+0 0.08em;
+
+-webkit-text-stroke:
+0.3px rgba(255,255,255,.95);
+
+}
+
+/* 日付・会場・カウントダウン */
+.hero-text h2,
+.hero-text p,
+.hero-text span,
+.countdown{
+
+color:white;
+
+text-shadow:
+0 1px 8px rgba(0,0,0,.30);
+
+}
+
+/* カウントダウン */
+.countdown{
+
+margin-top:22px;
+
+font-size:0.95rem;
+
+letter-spacing:0.18em;
+
+}
+
+/* 区切り線 */
+.hero-divider{
+
+background:
+rgba(255,255,255,.85);
+
+}
+
+/* ===== スマホだけ ===== */
+@media(max-width:768px){
+
+.hero-image{
+
+object-fit:cover;
+
+filter:
+brightness(98%)
+contrast(108%)
+saturate(104%);
+
+transform:none;
+
+}
+
+.hero-text{
+
+top:74%;
+
+padding:20px 24px;
+
+}
+
+.hero-text h1{
+
+font-size:
+clamp(1.9rem,7vw,2.5rem);
+
+}
+
+.hero-text .ampersand{
+
+font-size:0.34em;
+
+top:0.05em;
+
+}
+
+}
+
+
+
+
+nav{
+
+position:sticky;
+
+top:0;
+
+background:white;
+
+border-bottom:1px solid #ddd;
+
+z-index:10;
+}
+
+nav ul{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+list-style:none;
+}
+
+nav li{
+
+margin:15px;
+}
+
+nav a{
+
+color:#555;
+
+text-decoration:none;
+}
+
+section{
+
+max-width:900px;
+
+margin:auto;
+
+padding:90px 30px;
+}
+
+h3{
+
+font-size:2rem;
+
+text-align:center;
+
+margin-bottom:20px;
+
+font-weight:normal;
+
+}
+
+h3::after{
+
+content:"";
+
+display:block;
+
+width:50px;
+
+height:1px;
+
+background:#c9bfb4;
+
+margin:16px auto 0;
+
+}
+
+
+.invitation{
+
+text-align:center;
+
+white-space:pre-line;
+
+font-size:1.08rem;
+
+line-height:2.6;
+
+letter-spacing:0.04em;
+
+background:#f8f2ea;
+
+padding:72px 56px;
+
+border-radius:18px;
+
+max-width:820px;
+
+margin:auto;
+
+box-shadow:
+0 6px 20px rgba(0,0,0,0.04);
+
+}
+
+/* スマホ */
+@media(max-width:768px){
+
+.invitation{
+
+font-size:0.98rem;
+
+line-height:2.45;
+
+/* ←左右広く使う */
+padding:48px 26px;
+
+width:100%;
+
+max-width:none;
+
+/* ←中央寄せだけど詰めすぎない */
+letter-spacing:0.02em;
+
+}
+
+}
+
+
+.profile-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:30px;
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+.profile-card{
+
+text-align:center;
+
+padding:40px;
+
+background:#faf8f5;
+
+border-radius:18px;
+
+}
+
+.profile-card h4{
+
+font-size:1.4rem;
+
+font-weight:normal;
+
+margin-bottom:20px;
+
+}
+
+@media(max-width:768px){
+
+.profile-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+.timeline{
+
+max-width:500px;
+
+margin:auto;
+
+border-left:2px solid #bba690;
+
+padding-left:40px;
+
+}
+
+
+
+.schedule-item{
+
+position:relative;
+
+margin-bottom:55px;
+}
+
+.schedule-item::before{
+
+content:"";
+
+position:absolute;
+
+left:-48px;
+
+top:10px;
+
+width:14px;
+
+height:14px;
+
+border-radius:50%;
+
+background:#8f7763;
+}
+
+.time{
+
+font-size:1.6rem;
+
+font-weight:bold;
+
+margin-bottom:6px;
+}
+
+.venue{
+
+text-align:center;
+}
+
+iframe{
+
+width:100%;
+
+height:460px;
+
+border:none;
+
+margin-top:30px;
+
+border-radius:18px;
+
+box-shadow:
+0 12px 32px rgba(0,0,0,.08);
+
+overflow:hidden;
+
+}
+.access-card{
+
+margin:
+
+32px auto
+40px;
+
+padding:
+
+24px 30px;
+
+max-width:520px;
+
+background:
+
+#faf8f5;
+
+border:
+
+1px solid rgba(187,166,144,.35);
+
+border-radius:
+
+18px;
+
+text-align:center;
+
+}
+
+.access-card p{
+
+margin-bottom:12px;
+
+font-size:0.95rem;
+
+color:#666;
+
+}
+
+.access-card a{
+
+display:inline-block;
+
+padding:
+
+14px 28px;
+
+text-decoration:none;
+
+color:#6a5949;
+
+border:
+
+1px solid #bba690;
+
+border-radius:
+
+999px;
+
+transition:.2s;
+
+}
+
+.access-card a:hover{
+
+background:
+
+#f3ece5;
+
+}
+
+
+
+.note{
+
+text-align:center;
+}
+
+.rsvp{
+
+text-align:center;
+}
+
+.rsvp a{
+
+display:inline-block;
+
+padding:16px 40px;
+
+background:#8f7763;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:999px;
+}
+
+footer{
+
+text-align:center;
+
+padding:60px;
+
+background:#f1ede8;
+}
+
+@media(max-width:768px){
+
+.hero-text h1{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+/* ←改行禁止 */
+flex-wrap:nowrap;
+
+white-space:nowrap;
+
+/* ←間隔少し詰める */
+gap:0.15em;
+
+/* ←スマホで少し小さく */
+font-size:
+clamp(1.7rem,7vw,2.3rem);
+
+letter-spacing:0.03em;
+
+/* ←少し上へ */
+margin-top:-18px;
+
+}
+
+/* &だけもっと小さく */
+.hero-text .ampersand{
+
+font-size:0.34em;
+
+font-weight:300;
+
+opacity:0.92;
+
+margin:
+0 0.06em;
+
+position:relative;
+
+top:-0.12em;
+
+-webkit-text-stroke:
+0.3px rgba(255,255,255,.95);
+
+}
+
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="images/couple.jpg" class="hero-image">
+
+<div class="hero-text">
+<h1>
+
+<span>Yasutaka</span>
+
+<span class="ampersand">&</span>
+
+<span>Haruka</span>
+
+</h1>
+
+<div class="hero-divider"></div>
+
+
+<h2>
+
+2026年8月23日
+
+</h2>
+
+<p>
+
+東京會舘 本館
+
+</p>
+
+<div id="countdown" class="countdown"></div>
+
+</div>
+
+</header>
+
+<nav>
+
+<ul>
+
+<li><a href="#greeting">ご挨拶</a></li>
+
+<li><a href="#profile">プロフィール</a></li>
+
+<li><a href="#schedule">当日の流れ</a></li>
+
+<li><a href="#venue">会場</a></li>
+
+<li><a href="#rsvp">出欠確認</a></li>
+
+</ul>
+
+</nav>
+
+<section id="greeting">
+
+<h3>ご挨拶</h3>
+
+<div class="invitation">
+
+謹啓
+
+初夏の風もさわやかな今日この頃
+
+皆様には おすこやかに お過ごしのことと　お慶び申し上げます
+
+このたび私どもの婚約相整い結婚式を挙げることになりました
+
+日頃の ご厚誼を感謝するとともに 末永いおつきあいを お願いいたしたく
+
+心ばかりの小宴をもうけたいと存じます
+
+ご多用中とは存じますが ご臨席くださいますよう
+
+お願い申し上げます
+
+謹白
+
+増田　康隆　　中島　遥
+</div>
+</section>
+<section id="profile">
+
+<h3>プロフィール</h3>
+
+<div class="profile-grid">
+
+<div class="profile-card">
+
+<h4>増田 康隆</h4>
+
+<p>
+
+1996年7月生まれ
+
+<br><br>
+
+東京都出身
+
+</p>
+
+</div>
+
+<div class="profile-card">
+
+<h4>中島 遥</h4>
+
+<p>
+
+1990年7月生まれ
+
+<br><br>
+
+長野県出身
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="schedule">
+
+<h3>当日の流れ</h3>
+
+<div class="timeline">
+
+<div class="schedule-item">
+
+<div class="time">
+
+15:40
+
+</div>
+
+挙式へのご列席賜りたく，7階式場（チャペル）にお越しください
+
+</div>
+
+<div class="schedule-item">
+
+<div class="time">
+
+16:00
+
+</div>
+
+挙式 開式
+
+</div>
+
+<div class="schedule-item">
+
+<div class="time">
+
+16:30
+
+</div>
+
+披露宴の受付を開始いたします（7階　Sakura）
+
+</div>
+
+<div class="schedule-item">
+
+<div class="time">
+
+17:00
+
+</div>
+
+披露宴 開宴
+
+</div>
+
+</div>
+
+</section>
+
+<section id="venue">
+
+<h3>会場</h3>
+
+<div class="venue">
+
+<p>
+
+<strong>
+
+東京會舘 本館
+
+</strong>
+
+</p>
+
+<br>
+
+<p>
+
+〒100-0005
+
+<br>
+
+東京都千代田区丸の内3丁目2番1号
+
+</p>
+
+<br>
+<p>
+
+挙式会場：7階 式場（チャペル）
+
+<br>
+
+披露宴会場：7階 Sakura
+
+<br>
+
+クローク：7階
+
+</p>
+
+<!-- アクセス案内 -->
+
+<div class="access-card">
+
+<p>
+
+交通案内はこちら
+
+</p>
+
+<a
+href="https://www.kaikan.co.jp/access/"
+target="_blank">
+
+東京會舘 公式アクセスページ
+
+</a>
+
+</div>
+
+<iframe
+src="https://maps.google.com/maps?q=東京會舘%20本館%20東京都千代田区丸の内3-2-1&z=17&output=embed"
+loading="lazy">
+</iframe>
+
+
+</div>
+
+</section>
+
+
+<section id="rsvp">
+
+<h3>出欠確認</h3>
+
+<div class="rsvp">
+
+<p>
+
+ご出欠につきましては
+下記フォームより
+ご回答ください
+
+</p>
+
+<br>
+
+<iframe
+src="https://docs.google.com/forms/d/e/1FAIpQLSd61zpagtnhTW3KMRbP6OCpZyuxBXIX8IcJesDf1x-_TdBAsA/viewform?embedded=true"
+width="100%"
+height="3000"
+frameborder="0"
+marginheight="0"
+marginwidth="0"
+style="
+background:white;
+border-radius:12px;
+">
+</iframe>
+
+</div>
+
+</section>
+
+<footer>
+
+増田 康隆
+
+     
+
+中島 遥
+
+<br><br>
+
+2026年8月23日
+
+</footer>
+
+<script>
+
+const weddingDate=
+
+new Date("2026-08-23T16:00:00");
+
+function updateCountdown(){
+
+const now=new Date();
+
+const diff=weddingDate-now;
+
+const d=Math.floor(diff/86400000);
+
+const h=Math.floor(diff/3600000)%24;
+
+const m=Math.floor(diff/60000)%60;
+
+const s=Math.floor(diff/1000)%60;
+
+document.getElementById("countdown").innerHTML=
+
+d+"日 "+h+"時間 "+m+"分 "+s+"秒";
+
+}
+
+updateCountdown();
+
+setInterval(updateCountdown,1000);
+
+</script>
+
+</body>
+
+</html>
